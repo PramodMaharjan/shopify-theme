@@ -25,7 +25,7 @@
             "button_label_1": "Shop all",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
-            "button_label_2": "", 
+            "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
@@ -75,10 +75,30 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "dynamic_section_4QTTet": {
+      "type": "dynamic-section",
+      "blocks": {
+        "promotion_TJRtPx": {
+          "type": "promotion",
+          "settings": {
+            "title": "Promotion 1",
+            "img": "shopify:\/\/shop_images\/shoe24.1.webp"
+          }
+        }
+      },
+      "block_order": [
+        "promotion_TJRtPx"
+      ],
+      "settings": {
+        "title": "Promotion",
+        "text_aighnment": "center"
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "dynamic_section_4QTTet"
   ]
 }
