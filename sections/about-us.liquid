@@ -1,0 +1,67 @@
+{{ 'about-us.css' | asset_url | stylesheet_tag }}
+
+<style>
+  @media(max-width: 767px) {
+    .about .about__grid-content p {
+      text-align: {{ section.settings.mobile_text_alignment }};
+    }
+  }
+</style>
+
+<div class="about page-width">
+  <h2 class="about__title">About Us</h2>
+  <div class="about__info">
+    <div class="about__grid">
+      <div class="about__grid-content">
+        <h2>Durable Shoes
+        </h2>
+        <p>A cras semper auctor neque vitae tempus quam pellentesque. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Amet consectetur adipiscing elit ut aliquam purus sit. Tellus at urna condimentum mattis pellentesque id nibh. Ultrices neque ornare aenean euismod .</p>
+      </div>
+      <div class="about__grid-img">
+        {% if section.settings.img %}
+          {{ section.settings.img | image_url: width: 500 | image_tag }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "About Us",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "label": "Image",
+        "id": "img"
+      }, {
+        "type": "select",
+        "id": "mobile_text_alignment",
+        "label": "Text Alignment for Mobile",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          }, {
+            "value": "center",
+            "label": "Center"
+          }, {
+            "value": "right",
+            "label": "Right"
+          }, {
+            "value": "justify",
+            "label": "Justify"
+          }
+        ],
+        "default": "left"
+      }
+    ],
+    "presets": [
+      {
+        "name": "About us"
+      }
+    ]
+
+  }
+{% endschema %}

@@ -15,7 +15,7 @@
 {%- endstyle -%}
 
 <div class="page-width page-width--narrow section-{{ section.id }}-padding">
-  <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+  <h1 style="color: {{section.settings.body_text}};" class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ page.title | escape }}
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
@@ -50,6 +50,11 @@
         "unit": "px",
         "label": "t:sections.all.padding.padding_bottom",
         "default": 36
+      }, {
+        "type": "color",
+        "id": "body_text",
+        "label": "Body text",
+        "default": "#000000"
       }
     ]
   }
