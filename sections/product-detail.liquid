@@ -1,0 +1,73 @@
+{{ 'product-detail.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+{%- endstyle -%}
+
+<div class=" page-width">
+  <div class="product__detail">
+    {% if section.settings.selected_product != blank %}
+      {% assign product = all_products[section.settings.selected_product] %}
+      <div class="product__image">
+        {% for image in product.images %}
+          <img
+            src="{{ image | img_url: 'grande' }}"
+            alt="{{ product.title }}"
+            height="500"
+            width="500">
+        {% endfor %}
+      </div>
+      <div class="product__info">
+        <h2 class="product__title">{{ product.title }}</h2>
+        <h3>{{ section.settings.manufacturer }}</h3>
+        <span class="product__price">{{ product.price | money }}</span>
+        <ul>
+          {% for variant in product.variants %}
+            <li>
+              <strong>Variant ID:</strong>
+              {{ variant.id }}<br>
+              <strong>Title:</strong>
+              {{ variant.title }}<br>
+              <strong>Available:</strong>
+              {{ variant.available | default: 'No' }}<br>
+            </li>
+          {% endfor %}
+        </ul>
+        <form
+          action="/cart/add"
+          method="post"
+          enctype="multipart/form-data">
+          <input
+            type="hidden"
+            name="id"
+            value="{{ product.variants.first.id }}">
+           <input type="submit" value="Add to Cart" class="product__btn">
+        </form>
+        <p>{{ product.description }}</p>
+      </div>
+    {% else %}
+      <p>Please select a product to display its details.</p>
+    {% endif %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Product Detail",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "product",
+        "id": "selected_product",
+        "label": "Select Product"
+      }, {
+        "type": "text",
+        "id": "manufacturer",
+        "label": "Manufacturer"
+      }
+    ]
+
+// "presets": [
+// {
+// "name": "Product Detail"
+// }
+// ]
+  }
+{% endschema %}

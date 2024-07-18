@@ -5,12 +5,9 @@ img {
   height: auto;
 }
 
-.page-width {
-  padding: 0 4rem;
-}
-
 .about {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  margin-top: 50px;
 }
 
 .about .about__grid-content h2 {

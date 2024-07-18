@@ -9,15 +9,31 @@
 */
 {
   "sections": {
+    "image-banner": {
+      "type": "about-us-image-banner",
+      "settings": {
+        "first-image": "shopify:\/\/shop_images\/img-1.webp",
+        "second-image": "shopify:\/\/shop_images\/img-2.webp"
+      }
+    },
     "about": {
       "type": "about-us",
       "settings": {
-        "img": "shopify:\/\/shop_images\/about-us.webp",
-        "mobile_text_alignment": "justify"
+        "img": "shopify:\/\/shop_images\/shoe24.1.webp",
+        "mobile_text_alignment": "left"
+      }
+    },
+    "product-detail": {
+      "type": "product-detail",
+      "settings": {
+        "selected_product": "sunlight-air-cushion-running-shoes",
+        "manufacturer": "{{ section.settings.selected_product.metafields.custom.manufacturer.value }}"
       }
     }
   },
   "order": [
-    "about"
+    "image-banner",
+    "about",
+    "product-detail"
   ]
 }

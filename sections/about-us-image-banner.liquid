@@ -1,0 +1,34 @@
+{{ 'about-us-image-banner.css' | asset_url | stylesheet_tag }}
+<div class="page-width">
+  <div class="img-container">
+  {% if section.settings.first-image %}
+    {{ section.settings.first-image | image_url: width: 545 | image_tag }}
+  {% endif %}
+  {% if section.settings.second-image %}
+    {{ section.settings.second-image | image_url: width: 545 | image_tag }}
+  {% endif %}
+</div>
+</div>
+{% schema %}
+  {
+    "name": "Image Banner",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "first-image",
+        "label": "First Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "second-image",
+        "label": "Second Image"
+      }
+    ]
+    // "presets": [
+    //   {
+    //     "name": "About Image Banner"
+    //   }
+    // ]
+  }
+{% endschema %}
