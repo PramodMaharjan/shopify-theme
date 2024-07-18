@@ -12,7 +12,7 @@
     "about": {
       "type": "about-us",
       "settings": {
-        "img": "shopify:\/\/shop_images\/shoe24.webp",
+        "img": "shopify:\/\/shop_images\/about-us.webp",
         "mobile_text_alignment": "justify"
       }
     }
