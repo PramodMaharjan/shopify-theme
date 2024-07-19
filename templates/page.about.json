@@ -29,11 +29,30 @@
         "selected_product": "sunlight-air-cushion-running-shoes",
         "manufacturer": ""
       }
+    },
+    "multirow_LqpykL": {
+      "type": "multirow",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image-banner",
     "about",
-    "product-detail"
+    "product-detail",
+    "multirow_LqpykL"
   ]
 }
