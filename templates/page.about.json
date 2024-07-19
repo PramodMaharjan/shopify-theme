@@ -27,7 +27,7 @@
       "type": "product-detail",
       "settings": {
         "selected_product": "sunlight-air-cushion-running-shoes",
-        "manufacturer": "{{ section.settings.selected_product.metafields.custom.manufacturer.value }}"
+        "manufacturer": ""
       }
     }
   },
