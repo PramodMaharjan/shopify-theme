@@ -664,6 +664,16 @@
           </a>
         </section>
       </div>
+      <p>
+        <label>Please let us know your favorite color</label>
+
+        <input
+          type="text"
+          name="attributes[Favorite color]"
+          form="cart"
+          value="{{ cart.attributes['Favorite color'] }}"
+        >
+      </p>
     </div>
 
     {% render 'product-media-modal', variant_images: variant_images %}
