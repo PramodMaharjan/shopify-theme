@@ -24,6 +24,12 @@
           "settings": {
           }
         },
+        "okendo_star_rating_r4edDK": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
         "judge_me_reviews_preview_badge_cbHf76": {
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
@@ -68,6 +74,7 @@
       "block_order": [
         "vendor",
         "title",
+        "okendo_star_rating_r4edDK",
         "judge_me_reviews_preview_badge_cbHf76",
         "price",
         "variant_picker",
