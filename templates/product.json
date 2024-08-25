@@ -150,12 +150,31 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "1724584836ecca0b7c": {
+      "type": "apps",
+      "blocks": {
+        "okendo_reviews_widget_KaeLBt": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_reviews_widget_KaeLBt"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "related-products",
     "complementary-products",
-    "1724346825e2c917bf"
+    "1724346825e2c917bf",
+    "1724584836ecca0b7c"
   ]
 }
