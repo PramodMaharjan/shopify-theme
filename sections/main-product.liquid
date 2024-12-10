@@ -509,19 +509,7 @@
                     </p>
                   </div>
                 {%- endif -%}
-                            xxxx
-                            {% if product.metafields.custom.size_guide %}
-  <div class="size-guide">
-    <h2>{{ product.metafields.custom.size_guide.fields.title }}</h2>
-    <p>{{ product.metafields.custom.size_guide.fields.additional_notes }}</p>
-    <div>
-      {{ product.metafields.custom.size_guide.fields.size_chart_table | raw }}
-    </div>
-    {% if product.metafields.custom.size_guide.fields.image %}
-      <img src="{{ product.metafields.custom.size_guide.fields.image | image_url }}" alt="Shoe Size Chart">
-    {% endif %}
-  </div>
-{% endif %}
+                            <h2>Test</h2>
               {%- when 'complementary' -%}
                 <product-recommendations
                   class="complementary-products quick-add-hidden{% if block.settings.make_collapsible_row %} is-accordion{% endif %}{% if block.settings.enable_quick_add %} complementary-products-contains-quick-add{% endif %}"
