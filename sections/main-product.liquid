@@ -676,7 +676,18 @@
       </p>
                         
     </div>
-          <h2>Test</h2>
+      {% if product.metafields.custom.size_guide %}
+  <div class="size-guide">
+    <h2>{{ product.metafields.custom.size_guide.fields.title }}</h2>
+    <p>{{ product.metafields.custom.size_guide.fields.additional_notes }}</p>
+    <div>
+      {{ product.metafields.custom.size_guide.fields.size_chart_table | raw }}
+    </div>
+    {% if product.metafields.custom.size_guide.fields.image %}
+      <img src="{{ product.metafields.custom.size_guide.fields.image | image_url }}" alt="Shoe Size Chart">
+    {% endif %}
+  </div>
+{% endif %}
     {% render 'product-media-modal', variant_images: variant_images %}
 
     {% assign popups = section.blocks | where: 'type', 'popup' %}
