@@ -121,7 +121,7 @@
                 {% if product.tags contains 'no-search' %}
                   <h3>No results</h3>
                 {% else %}
-                  <li
+                  {% comment %} <li
                     id="predictive-search-option-product-{{ forloop.index }}"
                     class="predictive-search__list-item"
                     role="option"
@@ -154,7 +154,7 @@
                         {%- endif -%}
                       </div>
                     </a>
-                  </li>
+                  </li> {% endcomment %}
                 {% endif %}
               {%- endfor -%}
             </ul>
