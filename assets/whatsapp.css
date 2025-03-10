@@ -1,0 +1,32 @@
+.whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: whatsapp;
+  column-gap: 4px;
+}
+.whatsapp svg {
+  flex: 0 0 24px;
+  display: block;
+  height: auto;
+  width: 24px;
+}
+.whatsapp .whatsapp__link {
+  display: block;
+  text-decoration: none;
+  color: #f3f3f3;
+  font-size: 11px;
+  line-height: 0;
+}
+@media screen and (max-width: 749px) {
+  .whatsapp .whatsapp__link {
+    line-height: 16px;
+    text-align: center;
+  }
+}
+
+.custom_announcement-bar .utility-bar__grid {
+  grid-template-areas: "announcements" "whatsapp";
+}
+
+/*# sourceMappingURL=whatsapp.css.map */
