@@ -126,6 +126,8 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-1",
+    "whatsapp_number": "9745946066",
+    "whatsapp_msg": "Hi there!",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
