@@ -1465,5 +1465,32 @@
         "default": "scheme-1"
       }
     ]
+  },
+  {
+    "name": "Whatsapp Button",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_whatsapp",
+        "label": "Show Whatsapp",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "link_text",
+        "label": "Link Text",
+        "default": "Click here to Whatsapp us!(MON-SUN, 9am-6pm)"
+      },
+      {
+        "type": "text",
+        "id": "whatsapp_number",
+        "label": "Enter Your Phone Number"
+      },
+      {
+        "type": "text",
+        "id": "whatsapp_msg",
+        "label": "Enter Your Message"
+      }
+    ]
   }
 ]
