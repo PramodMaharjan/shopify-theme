@@ -533,12 +533,5 @@
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
     }
-  },
-  "shopify": {
-    "checkout": {
-      "contact": {
-        "delivery_option_title": "Random"
-      }
-    }
   }
 }
